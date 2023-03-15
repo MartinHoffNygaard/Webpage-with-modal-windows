@@ -7,3 +7,5 @@ This is a simple webpage that can show/hide a modal window by pressing on one of
 - HTML
 - CSS 
 
+![Image of the webpage](/modalExample.PNG)
+
