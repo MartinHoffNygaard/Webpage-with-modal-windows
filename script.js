@@ -23,8 +23,14 @@ for (let i = 0; i < btnShowModal.length; i++) {
   btnShowModal[i].addEventListener('click', openModal);
 }
 
-//Adds the closeModal function to the "x" in the modal.
+//Executes the closeModal function when the "x" in the modal is pressed.
 btnCloseModal.addEventListener('click', closeModal);
 
-//Adds the function closeModal to when someone click outside the modal window.
+//Executes the function closeModal to when someone click outside the modal window.
 overlay.addEventListener('click', closeModal);
+
+//Executes the closeModal funtion when the escape key is pressed and the modal is visible.
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape' && !modal.classList.contains('hidden'))
+    closeModal();
+});
